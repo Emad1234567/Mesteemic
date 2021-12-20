@@ -32,23 +32,7 @@
 		
 		// Page View Chart
 		var ctx = document.getElementById('myChart').getContext("2d");
-		let draw = Chart.controllers.line.prototype.draw;
-		Chart.controllers.line = Chart.controllers.line.extend({
-			draw: function() {
-				draw.apply(this, arguments);
-				let ctx = this.chart.chart.ctx;
-				let _stroke = ctx.stroke;
-				ctx.stroke = function() {
-					ctx.save();
-					ctx.shadowColor = 'rgba(0,0,0,0.3)';
-					ctx.shadowBlur = 10;
-					ctx.shadowOffsetX = 0;
-					ctx.shadowOffsetY = 4;
-					_stroke.apply(this, arguments)
-					ctx.restore();
-				}
-			}
-		});
+	
 
 		var myChart = new Chart(ctx, {
 			type: 'line',
@@ -58,10 +42,10 @@
 				[
 					{				
 						label: "Total ",
-						borderColor: "#fff",
-						pointBorderColor: "#fff",
-						pointBackgroundColor: "#fff",
-						pointHoverBackgroundColor: "#fff",
+						borderColor: "#f4516c",
+						pointBorderColor: "#f4516c",
+						pointBackgroundColor: "#f4516c",
+						pointHoverBackgroundColor: "#f4516c",
 						pointHoverBorderColor: "#fff",
 						pointBorderWidth: 3,
 						pointHoverRadius: 6,
@@ -121,7 +105,7 @@
 				  bodyFontSize: 14,
 				  footerAlign: "center",
 				  bodyFontFamily: "Montserrat",
-				  borderColor:"#ccc",
+				  borderColor:"#909fa7",
 				  borderWidth:1,
 				  xPadding:20,
 				  yPadding:20,
@@ -136,7 +120,7 @@
 				scales: {
 					yAxes: [{
 						ticks: {
-							fontColor: "rgba(255,255,255,0.5)",
+							fontColor: "#909fa7",
 							beginAtZero: true,
 							maxTicksLimit: 5,
 							padding: 10,
@@ -154,7 +138,7 @@
 						},
 						ticks: {
 							padding: 20,
-							fontColor: "rgba(255,255,255,0.5)",
+							fontColor: "#909fa7",
 							fontFamily:"Montserrat"
 						}
 					}]

@@ -25,6 +25,13 @@
 	//metis menu
    $('#menu').metisMenu();
 	
+	//ace menuu
+    $("#respMenu").aceResponsiveMenu({
+        resizeWidth: '768', 
+        animationSpeed: 'fast',
+        accoridonExpAll: false
+   });
+   
     //slim scroll
     $('.scrollDiv').slimScroll({
         color: '#eee',

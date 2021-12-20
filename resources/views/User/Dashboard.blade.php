@@ -1,4 +1,4 @@
-@extends('header_files')
+@extends('User.user_header_files')
 @extends('User.layout.user_header')
 @section('content')
 <div class="row">
