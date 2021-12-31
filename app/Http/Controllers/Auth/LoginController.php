@@ -5,9 +5,11 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
 class LoginController extends Controller
 {
+   
     /*
     |--------------------------------------------------------------------------
     | Login Controller
@@ -34,7 +36,31 @@ class LoginController extends Controller
      * @return void
      */
     public function __construct()
-    {
+    { 
         $this->middleware('guest')->except('logout');
     }
+
+    public function login(Request $request)
+    {
+        $input = $request->all();
+       // dd($request->all(),Auth::attempt(['email' => $input['email'], 'password' => $input['password']]),['email' => $input['email'], 'password' => $input['password']]);
+        if(Auth::attempt(array('email' => $input['email'], 'password' => $input['password'])))
+        {
+           
+        if(auth()->user()->type == 'admin')
+        {
+            return redirect('/Admin');
+        }
+        else
+        {
+            return redirect('/User');
+        }
+    }
+    else
+    {
+        return redirect()->back()->with('msg','Credintial not match');
+    }
+    }
+
+    
 }

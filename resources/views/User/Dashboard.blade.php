@@ -1,5 +1,11 @@
-@extends('User.user_header_files')
+
+   
+
 @extends('User.layout.user_header')
+<!DOCTYPE html>
+<html lang="en">
+    <body class="horizontal">
+        @include('User.user_header_files')
 @section('content')
 <div class="row">
 			
@@ -551,4 +557,8 @@
         
     </div>
 </div>
+@include('User.script_files')
 @endsection
+
+</body>
+</html>

@@ -34,22 +34,23 @@
                     <div class="row justify-content-center">
                         <div class="col-sm-6 col-xl-4 ">
                               <div class="misc-header text-center">
-								<img alt="" src="assets/img/icon.png" class="logo-icon margin-r-10">
-								<img alt="" src="assets/img/logo-dark.png" class="toggle-none hidden-xs">
+								{{-- <img alt="" src="assets/img/icon.png" class="logo-icon margin-r-10"> --}}
+								<img alt="" src="{{asset('/mesteemic.png')}}" style="width:50%;"  class="toggle-none hidden-xs">
                             </div>
                             <div class="misc-box">   
-                                <form role="form" action="/Admin">
+                                <form role="form" method="post" action="{{route('login')}}">
+                                    @csrf
                                     <div class="form-group">                                      
                                         <label  for="exampleuser1">Username</label>
                                         <div class="group-icon">
-                                        <input id="exampleuser1" type="text" value="admin" placeholder="Username" class="form-control" required="">
+                                        <input id="exampleuser1" type="text" name="email" value="admin@gmail.com" placeholder="Username" class="form-control" required="">
                                         <span class="icon-user text-muted icon-input"></span>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Password</label>
                                         <div class="group-icon">
-                                        <input id="exampleInputPassword1" type="password" value="12345" placeholder="Password" class="form-control">
+                                        <input id="exampleInputPassword1" type="password" name="password" value="12345" placeholder="Password" class="form-control">
                                         <span class="icon-lock text-muted icon-input"></span>
                                         </div>
                                     </div>
@@ -60,20 +61,26 @@
 												<label for="checkbox2"> Remember Me </label>
 											</div>
                                         </div>
+                                       
                                         <div class="float-right">
-                                            <a href="/Admin" class="btn btn-block btn-primary btn-rounded box-shadow">Admin</a>
+                                            <button type="submit" class="btn btn-block btn-primary btn-rounded box-shadow">Login</button>
                                         </div>
-                                        <div class="float-right">
+                                        {{-- <div class="float-right">
                                             <a href="/User" class="btn btn-block btn-primary btn-rounded box-shadow">User</a>
-                                        </div>
+                                        </div> --}}
                                     </div>
+                                    @if(session('msg'))
+                                    <div class="alert alert-danger">
+                                        {{session('msg')}}
+                                    </div>
+                                    @endif
                                     <hr>
                                     <p class="text-center">Need to Signup?</p>
                                     <a href="{{route('register')}}" class="btn btn-block btn-success btn-rounded box-shadow">Register Now</a>
                                 </form>
                             </div>
                             <div class="text-center misc-footer">
-                               <p>Copyright &copy; 2018 FixedPlus</p>
+                               <p>Copyright &copy; 2022 Mesteemic</p>
                             </div>
                         </div>
                     </div>

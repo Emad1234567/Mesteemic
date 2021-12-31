@@ -5,8 +5,10 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
+use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
+
 use Illuminate\Support\Facades\Validator;
 
 class RegisterController extends Controller
@@ -49,11 +51,15 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
+      
+
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'email' => ['required', 'string', 'email', 'max:255'],
+            'password' => ['required', 'string', 'min:8'],
         ]);
+
+       
     }
 
     /**
@@ -62,12 +68,28 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\Models\User
      */
-    protected function create(array $data)
+    protected function create(Request $request)
     {
-        return User::create([
-            'name' => $data['name'],
+        dd('ss');
+        $user_count = User::where('email',$data['email'])->count();
+        if($user_count < 1){
+           
+         $user =  User::create([
+            'first_name'=>$data['name'],
+            'last_name'=>$data['last_name'],
+            'username'=>$data['user_name'],
             'email' => $data['email'],
+            'type'=>'user',
             'password' => Hash::make($data['password']),
         ]);
+      
+        return redirect()->back()->with('msg','Registerd');
+    }
+    else
+    {
+       dd('ss');
+        return redirect()->back()->with('msg','Email is already in use');
+    }
+     
     }
 }

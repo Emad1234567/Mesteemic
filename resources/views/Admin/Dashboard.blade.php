@@ -1,8 +1,10 @@
 
-@extends('Admin.admin_header_files')
 
 @extends('Admin.layout.admin_header')
-
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    @include('Admin.admin_header_files')   
 @section('content')
 
 <div class="row w-no-padding margin-b-30">
@@ -76,7 +78,7 @@
     </div>
 </div>
 
-<div class="row">
+{{-- <div class="row">
     <div class="col-md-12">
       <div class="card bg-chart ">
             <div class="card-header text-white anime">
@@ -90,7 +92,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 
 <div class="row">
     <div class="col-md-8">
@@ -555,6 +557,11 @@
         
     </div>
 
-    
-
+    @include('Admin.script_files')
+   
 @endsection
+
+
+</body>
+
+</html>

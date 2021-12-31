@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
 
-
-    <body class="horizontal">
-
-		<!-- ============================================================== -->
+   
+		<!-- =======================y======================================= -->
 		<!-- 						Topbar Start 							-->
 		<!-- ============================================================== -->
 		<div class="top-bar light-top-bar">
@@ -158,7 +154,11 @@
 								</li>
 								<li class="dropdown-divider"></li>
 								<li>
-									<a class="dropdown-item" href="javascript:%20void(0);"><i class="icon-logout"></i> Logout</a>
+									<a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+									document.getElementById('logout-form').submit();"><i class="icon-logout"></i> Logout</a>
+									 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+										@csrf
+									</form>
 								</li>
 							</ul>
 						</li>
@@ -428,7 +428,7 @@
 				</ul>
 				</nav>
 				</div>
-			</div>================================================= -->
+			</div>
 		<!-- 						Navigation End	 						-->
 		<!-- ============================================================== -->
 
@@ -462,7 +462,3 @@
             </footer>
 
 
-
-    
-    </body>
-</html>

@@ -33,19 +33,13 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-sm-6 col-xl-4 ">
-
                             <div class="misc-header text-center">
-                                @if(session('msg'))
-                                <div class="alert alert-danger">
-                                    {{session('msg')}}
-                                </div>
-                                @endif
 								<img alt="" src="assets/img/icon.png" class="logo-icon margin-r-10">
 								<img alt="" src="assets/img/logo-dark.png" class="toggle-none hidden-xs">
                             </div>
                             <div class="misc-box">   
                                  <p class="text-center">Sign up to get instant access.</p>
-                                <form role="form" method="post" action="/user_register">
+                                <form role="form" method="post" action="{{route('register')}}">
                                    @csrf
                                    <div class="form-group">
                                     <label for="eampleuser1">User Name</label>
@@ -97,7 +91,6 @@
 											</div> 
                                         </div>
                                     </div>
-                                  
 									 <button type="submit" class="btn btn-block btn-primary btn-rounded box-shadow mt-10">Register Now</button>
                                     <hr>
 									
