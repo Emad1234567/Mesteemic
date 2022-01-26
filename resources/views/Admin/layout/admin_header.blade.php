@@ -301,6 +301,10 @@
                           
                         </li>
 						<li class="nav-item">
+                            <a class="nav-link" href="/Admin/Payment-Methods" aria-expanded="false"><i class="fa fa-credit-card"></i><span class="toggle-none">Payment Methods</a>
+                          
+                        </li>
+						<li class="nav-item">
                             <a class="nav-link" href="javascript: void(0);" aria-expanded="false"><i class="fa fa-envelope-open"></i> <span class="toggle-none">Inbox<span class="fa arrow"></span></span></a>
                             <ul class="nav-second-level nav flex-column sub-menu" aria-expanded="false">
                                 <li class="nav-item"><a class="nav-link" href="mail-index.html">Inbox</a></li>

@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
  use App\Models\Category;
  use App\Models\Currency;
  use App\Models\Loan_type;
+ use App\Models\Payment_method;
 
 class AdminController extends Controller
 {
@@ -235,6 +236,79 @@ class AdminController extends Controller
             ]);
             return redirect()->back()->with('msg','Deleted');
     }
+
+
+    public function payment_methods()
+    {
+         $payment_methods = Payment_method::where('is_deleted',0)->get();
+         return view('Admin.payment_method',compact('payment_methods'));
+    }  
+
+
+    public function add_payment_methods(Request $request)
+    {
+      //  dd($request->all());
+        $payment_method = new Payment_method();
+        $payment_method->name = $request->name;
+        $payment_method->type = $request->type;
+        $payment_method->private_key = $request->private_key;
+        $payment_method->public_key = $request->public_key;
+        $payment_method->account_number = $request->acc_number;
+        $payment_method->account_name = $request->acc_name;
+        $payment_method->save();
+
+        return redirect()->back()->with('mssg','Payment Methods Added');
+
+    }
+
+    public function edit_payment_methods(Request $request,$id)
+    {
+      //  dd($request->all());
+        Payment_method::where('id',$id)->update([
+        'name' => $request->name,
+        'type' => $request->type,
+        'private_key' => $request->private_key,
+        'public_key' => $request->public_key,
+        'account_number' => $request->acc_number,
+        'account_name' => $request->acc_name,
+        
+    ]);
+
+        return redirect()->back()->with('mssg','Payment Methods Updated');
+
+    }
+
+    public function pay_method_active_deactive($id)
+    {
+        $pay_methods_details = Payment_method::where('id',$id)->first();
+
+        if($pay_methods_details->status == 0)
+        {
+            Payment_method::where('id',$id)->update([
+            'status'=>1
+            ]);
+
+            return redirect()->back()->with('msg','DeActivated');
+        }
+        else
+        {
+            Payment_method::where('id',$id)->update([
+                'status'=>0
+                ]);
+
+                return redirect()->back()->with('mssg','Activated');
+        }
+    }
+
+    public function delete_payment_method($id)
+    {
+        Payment_method::where('id',$id)->update([
+            'is_deleted'=>1
+            ]);
+            return redirect()->back()->with('msg','Deleted');
+    }
+
+
 
 
 

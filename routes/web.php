@@ -61,7 +61,15 @@ Route::prefix('Admin')->group(function ()
     Route::post('edit_loanType/{loan_id}', [App\Http\Controllers\AdminController::class, 'edit_loanType'])->name('edit_loanType');
     Route::get('loan_active_deactive/{loan_id}', [App\Http\Controllers\AdminController::class, 'loan_active_deactive'])->name('loan_active_deactive');
     Route::get('delete_type/{loan_id}', [App\Http\Controllers\AdminController::class, 'delete_type'])->name('delete_type');
+    
+    //Payment Mehtods
+    Route::get('Payment-Methods', [App\Http\Controllers\AdminController::class, 'payment_methods'])->name('Payment-Methods');
+    Route::post('add_payment_methods', [App\Http\Controllers\AdminController::class, 'add_payment_methods'])->name('add_payment_methods');
+    Route::post('edit_payment_methods/{id}', [App\Http\Controllers\AdminController::class, 'edit_payment_methods'])->name('edit_payment_methods');
+    Route::get('pay_method_active_deactive/{id}', [App\Http\Controllers\AdminController::class, 'pay_method_active_deactive'])->name('pay_method_active_deactive');
+    Route::get('delete_payment_method/{id}', [App\Http\Controllers\AdminController::class, 'delete_payment_method'])->name('delete_payment_method');
 
+    
     
     
     
