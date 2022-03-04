@@ -1,7 +1,7 @@
 
 
 
-      
+
  	<div class="top-bar light-top-bar">
 			<div class="container-fluid">
 				<div class="row">
@@ -11,7 +11,7 @@
 								<img alt="" src="{{asset('admin_assets/img/icon.png"')}}" class="logo-icon margin-r-10">
 								<img alt="" src="{{asset('/mesteemic.png')}}" style="width:50%;" class="toggle-none hidden-xs">
 							</h1>
-						</a>				
+						</a>
 						<div class="left-nav-toggle" >
 							<a  href="#" class="nav-collapse"><i class="fa fa-bars"></i></a>
 						</div>
@@ -26,63 +26,63 @@
 						<ul class="list-inline top-right-nav">
 							<li class="dropdown icons-dropdown d-none-m">
 								<a class="dropdown-toggle " data-toggle="dropdown" href="#"><i class="fa fa-envelope"></i> <div class="notify setpos"> <span class="heartbit"></span> <span class="point"></span> </div></a>
-								
+
 								<ul class="dropdown-menu top-dropdown lg-dropdown notification-dropdown">
 									<li>
 										<div class="dropdown-header">
 											<a class="float-right" href="#"><small>View All</small></a> Messages
 										</div>
-										
+
 										<div class="scrollDiv">
 											<div class="notification-list">
 												<a class="clearfix" href="javascript:%20void(0);">
 													<span class="notification-icon">
 														<img alt="" class="rounded-circle" src="{{asset('admin_assets/img/avtar-2.png')}}" width="50">
-													</span> 
+													</span>
 													<span class="notification-title">
-													John Doe 
-													<label class="label label-warning float-right">Support</label>
-													</span> 
-													<span class="notification-description">Lorem Ipsum is simply dummy text of the printing.</span> 
-													<span class="notification-time">15 minutes ago</span>
-												</a>
-												
-												<a class="clearfix" href="javascript:%20void(0);">
-													<span class="notification-icon">
-													<img alt="" class="rounded-circle" src="{{asset('admin_assets/img/avtar-3.png')}}" width="50">
-													</span> 
-													<span class="notification-title">
-													Govindo Doe 
-													<label class="label label-warning float-right">Support</label>
-													</span> 
-													<span class="notification-description">Lorem Ipsum is simply dummy text of the printing.</span> 
-													<span class="notification-time">15 minutes ago</span>
-												</a> 
-												
-												<a class="clearfix" href="javascript:%20void(0);">
-													<span class="notification-icon">
-													<img alt="" class="rounded-circle" src="{{asset('admin_assets/img/avtar-4.png')}}" width="50">
-													</span> 
-													<span class="notification-title">
-													Megan Doe 
+													John Doe
 													<label class="label label-warning float-right">Support</label>
 													</span>
 													<span class="notification-description">Lorem Ipsum is simply dummy text of the printing.</span>
 													<span class="notification-time">15 minutes ago</span>
-												</a> 
-												
+												</a>
+
+												<a class="clearfix" href="javascript:%20void(0);">
+													<span class="notification-icon">
+													<img alt="" class="rounded-circle" src="{{asset('admin_assets/img/avtar-3.png')}}" width="50">
+													</span>
+													<span class="notification-title">
+													Govindo Doe
+													<label class="label label-warning float-right">Support</label>
+													</span>
+													<span class="notification-description">Lorem Ipsum is simply dummy text of the printing.</span>
+													<span class="notification-time">15 minutes ago</span>
+												</a>
+
+												<a class="clearfix" href="javascript:%20void(0);">
+													<span class="notification-icon">
+													<img alt="" class="rounded-circle" src="{{asset('admin_assets/img/avtar-4.png')}}" width="50">
+													</span>
+													<span class="notification-title">
+													Megan Doe
+													<label class="label label-warning float-right">Support</label>
+													</span>
+													<span class="notification-description">Lorem Ipsum is simply dummy text of the printing.</span>
+													<span class="notification-time">15 minutes ago</span>
+												</a>
+
 												<a class="clearfix" href="javascript:%20void(0);">
 													<span class="notification-icon">
 													<img alt="" class="rounded-circle" src="{{asset('admin_assets/img/avtar-5.png')}}" width="50">
 													</span>
 													<span class="notification-title">
-													Hritik Doe 
+													Hritik Doe
 													<label class="label label-warning float-right">Support</label>
 													</span>
 													<span class="notification-description">Lorem Ipsum is simply dummy text of the printing.</span>
 													<span class="notification-time">15 minutes ago</span>
 												</a>
-												
+
 											</div>
 										</div>
 									</li>
@@ -97,16 +97,16 @@
 										</div>
 										<div class="scrollDiv">
 											<div class="notification-list">
-											
+
 												<a class="clearfix" href="javascript:%20void(0);">
 													<span class="notification-icon">
 														<i class="icon-cloud-upload text-primary"></i>
 													</span>
-													<span class="notification-title">Upload Complete</span> 
+													<span class="notification-title">Upload Complete</span>
 													<span class="notification-description">Lorem Ipsum is simply dummy text of the printing.</span>
 													<span class="notification-time">15 minutes ago</span>
-												</a> 
-												
+												</a>
+
 												<a class="clearfix" href="javascript:%20void(0);">
 													<span class="notification-icon">
 														<i class="icon-info text-warning"></i>
@@ -115,7 +115,7 @@
 													<span class="notification-description">Lorem Ipsum is simply dummy text of the printing.</span>
 													<span class="notification-time">15 minutes ago</span>
 												</a>
-												
+
 												<a class="clearfix" href="javascript:%20void(0);">
 													<span class="notification-icon">
 														<i class="icon-check text-success"></i>
@@ -124,7 +124,7 @@
 													<span class="notification-description">Lorem Ipsum is simply dummy text of the printing.</span>
 													<span class="notification-time">15 minutes ago</span>
 												</a>
-												
+
 												<a class="clearfix" href="javascript:%20void(0);">
 													<span class="notification-icon">
 														<i class=" icon-graph text-danger"></i>
@@ -133,7 +133,7 @@
 													<span class="notification-description">Lorem Ipsum is simply dummy text of the printing.</span>
 													<span class="notification-time">15 minutes ago</span>
 												</a>
-												
+
 											</div>
 										</div>
 									</li>
@@ -148,7 +148,7 @@
 									John Doe
 								</a>
 								<ul class="dropdown-menu top-dropdown">
-									<li> 
+									<li>
 										<a class="dropdown-item" href="javascript:%20void(0);"><i class="icon-bell"></i> Activities</a>
 									</li>
 									<li>
@@ -175,8 +175,8 @@
 		<!-- ============================================================== -->
 		<!--                        Topbar End                              -->
 		<!-- ============================================================== -->
-		
-		
+
+
 		<!-- ============================================================== -->
 		<!--                        Right Side Start                        -->
 		<!-- ============================================================== -->
@@ -185,7 +185,7 @@
 				<div class="nano-content">
 					<div>
 						<ul class="list-inline nav-tab-card clearfix" role="tablist">
-							
+
 							<li class="active" role="presentation">
 								<a aria-controls="friends" data-toggle="tab" href="#friends" role="tab">Friends</a>
 							</li>
@@ -256,7 +256,7 @@
 		<!-- ============================================================== -->
 		<!--                        Right Side End                          -->
 		<!-- ============================================================== -->
-		
+
 
         <!-- ============================================================== -->
 		<!-- 						Navigation Start 						-->
@@ -264,22 +264,22 @@
         <div class="main-sidebar-nav dark-navigation">
             <div class="nano">
                 <div class="nano-content sidebar-nav">
-				
+
 					<div class="card-body border-bottom text-center nav-profile">
 						<div class="notify setpos"> <span class="heartbit"></span> <span class="point"></span> </div>
                         <img alt="profile" class="margin-b-10  " src="{{asset('admin_assets/img/avtar-2.png')}}" width="80">
                         <p class="lead margin-b-0 toggle-none">John Doe</p>
-                        <p class="text-muted mv-0 toggle-none">Welcome</p>						
+                        <p class="text-muted mv-0 toggle-none">Welcome</p>
                     </div>
-					
+
                     <ul class="metisMenu nav flex-column" id="menu">
                         <li class="nav-heading"><span>MAIN</span></li>
-						<li class="nav-item active"><a class="nav-link" href="/Admin"><i class="fa fa-home"></i> <span class="toggle-none">Dashboard <span class="badge badge-pill badge-danger float-right mr-2">1.0</span></span></a></li>						
+						<li class="nav-item active"><a class="nav-link" href="/Admin"><i class="fa fa-home"></i> <span class="toggle-none">Dashboard <span class="badge badge-pill badge-danger float-right mr-2">1.0</span></span></a></li>
                         <li class="nav-item">
                             <a class="nav-link"  href="javascript: void(0);" aria-expanded="false"><i class="fa fa-th-large"></i> <span class="toggle-none">Users <span class="fa arrow"></span></span></a>
                             <ul class="nav-second-level nav flex-column " aria-expanded="false">
 								<li class="nav-item"><a class="nav-link" href="/Admin/All-Users">All Users</a></li>
-                                {{-- <li class="nav-item"><a class="nav-link" href="widgets-data.html">Widgets Data</a></li> --}}
+                                <li class="nav-item"><a class="nav-link" href="#">Loan Applicants</a></li>
                             </ul>
                         </li>
 						 <li class="nav-item">
@@ -294,15 +294,15 @@
                         </li>
 						<li class="nav-item">
                             <a class="nav-link" href="/Admin/Currency" aria-expanded="false"><i class="fa fa-dollar"></i> <span class="toggle-none">Currencies</a>
-                          
+
                         </li>
 						<li class="nav-item">
                             <a class="nav-link" href="/Admin/Loan-Types" aria-expanded="false"><i class="fa fa-percent"></i> <span class="toggle-none">Loan Types</a>
-                          
+
                         </li>
 						<li class="nav-item">
                             <a class="nav-link" href="/Admin/Payment-Methods" aria-expanded="false"><i class="fa fa-credit-card"></i><span class="toggle-none">Payment Methods</a>
-                          
+
                         </li>
 						<li class="nav-item">
                             <a class="nav-link" href="javascript: void(0);" aria-expanded="false"><i class="fa fa-envelope-open"></i> <span class="toggle-none">Inbox<span class="fa arrow"></span></span></a>
@@ -312,9 +312,9 @@
                                 <li class="nav-item"><a class="nav-link" href="mail-compose.html">Compose</a></li>
                             </ul>
                         </li>
-                        <li class="nav-heading"><span>FORMS, TABLE & LAYOUTS</span></li>
+                        {{-- <li class="nav-heading"><span>FORMS, TABLE & LAYOUTS</span></li> --}}
 
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a  class="nav-link" href="javascript: void(0);" aria-expanded="false"><i class="fa fa-cogs"></i> <span class="toggle-none">UI elements <span class="fa arrow"></span></span></a>
                             <ul class="nav-second-level nav flex-column sub-menu" aria-expanded="false">
 								<li class="nav-item"><a class="nav-link" href="ui-jquery-elements.html">Jquery UI</a></li>
@@ -338,7 +338,7 @@
                                 <li class="nav-item"><a class="nav-link" href="ui-treeview.html">Tree View</a></li>
                                 <li class="nav-item"><a class="nav-link" href="ui-draggable-cards.html">Draggable Cards</a></li>
                             </ul>
-                        </li>						
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="javascript: void(0);" aria-expanded="false"><i class="fa fa-file"></i> <span class="toggle-none">Forms <span class="fa arrow"></span></span></a>
                             <ul class="nav-second-level nav flex-column sub-menu" aria-expanded="false">
@@ -351,7 +351,7 @@
                                 <li class="nav-item"><a class="nav-link" href="form-wizard.html">Form Wizard</a></li>
                             </ul>
                         </li>
-                       
+
                         <li class="nav-item">
                             <a class="nav-link" href="javascript: void(0);" aria-expanded="false"><i class="fa fa-table"></i> <span class="toggle-none">Tables <span class="fa arrow"></span></span></a>
                             <ul class="nav-second-level nav flex-column sub-menu" aria-expanded="false">
@@ -361,7 +361,7 @@
                                 <li class="nav-item"><a class="nav-link" href="table-foo.html">Foo Tables</a></li>
                             </ul>
                         </li>
-						
+
 						<li class="nav-item">
                             <a class="nav-link" href="javascript: void(0);" aria-expanded="false"><i class="fa fa-bar-chart"></i> <span class="toggle-none">Charts <span class="fa arrow"></span>  <span class="badge badge-pill badge-success float-right mr-2">7</span></span></a>
                             <ul class="nav-second-level nav flex-column sub-menu" aria-expanded="false">
@@ -373,16 +373,16 @@
                                 <li class="nav-item"><a class="nav-link" href="chart-rickshaw.html">Rickshaw</a></li>
                                 <li class="nav-item"><a class="nav-link" href="chart-chartjs.html">ChartJs</a></li>
                             </ul>
-                        </li>
-						
-                        <li class="nav-item">
+                        </li> --}}
+
+                        {{-- <li class="nav-item">
                             <a class="nav-link" href="javascript: void(0);" aria-expanded="false"><i class="fa fa-map-marker"></i> <span class="toggle-none">Maps <span class="fa arrow"></span></span></a>
                             <ul class="nav-second-level nav flex-column sub-menu" aria-expanded="false">
                                 <li class="nav-item"><a class="nav-link" href="map-vector.html">Vector map</a></li>
                                 <li class="nav-item"><a class="nav-link" href="map-google.html">Google map</a></li>
                             </ul>
                         </li>
-						
+
 						<li class="nav-heading"><span>EXAMPLES</span></li>
 						<li class="nav-item">
                             <a class="nav-link"  href="javascript: void(0);" aria-expanded="false"><i class="fa fa-shopping-cart"></i> <span class="toggle-none">E-Commerce <span class="fa arrow"></span></span></a>
@@ -391,7 +391,7 @@
                                 <li class="nav-item"><a class="nav-link" href="ecommerce-products.html">All Products</a></li>
                                 <li class="nav-item"><a class="nav-link" href="ecommerce-orders.html">Orders</a></li>
                             </ul>
-                        </li>						
+                        </li>
 						<li class="nav-item">
                             <a class="nav-link"  href="javascript: void(0);" aria-expanded="false"><i class="fa fa-briefcase"></i> <span class="toggle-none">Corporate <span class="fa arrow"></span></span></a>
                             <ul class="nav-second-level nav flex-column sub-menu" aria-expanded="false">
@@ -405,11 +405,11 @@
                                 <li class="nav-item"><a class="nav-link" href="examples-add-and-update.html">Add and Update With Php</a></li>
 								<li class="nav-item"><a class="nav-link" href="examples-delete.html">Delete With Php</a></li>
                             </ul>
-                        </li>
-						
-                        <li class="nav-heading"><span>OTHERS</span></li>
-						
-                        <li class="nav-item">
+                        </li> --}}
+
+                        {{-- <li class="nav-heading"><span>OTHERS</span></li> --}}
+
+                        {{-- <li class="nav-item">
                             <a class="nav-link" href="javascript: void(0);" aria-expanded="false"><i class="fa fa-folder"></i> <span class="toggle-none">Sample Pages <span class="fa arrow"></span></span></a>
                             <ul class="nav-second-level nav flex-column sub-menu" aria-expanded="false">
                                 <li class="nav-item"><a class="nav-link" href="page-blank.html">Blank Page</a></li>
@@ -426,8 +426,8 @@
                                 <li class="nav-item"><a class="nav-link" href="page-faqs.html">Faqs</a></li>
                                 <li class="nav-item"><a class="nav-link" href="page-pricing.html">Pricing</a></li>
                             </ul>
-                        </li>
-                        <li class="nav-item">
+                        </li> --}}
+                        {{-- <li class="nav-item">
                             <a class="nav-link" href="javascript: void(0);" aria-expanded="false"><i class="fa fa-folder-open"></i> <span class="toggle-none">Multi Level<span class="fa arrow "></span></span></a>
                             <ul class="nav-second-level nav flex-column" aria-expanded="false">
                                 <li class="nav-item"><a class="nav-link" href="javascript: void(0);">Level 1</a></li>
@@ -438,7 +438,7 @@
                                     </ul>
                                 </li>
                             </ul>
-                        </li>
+                        </li> --}}
                     </ul>
                 </div>
             </div>
@@ -452,7 +452,7 @@
                     <li class="breadcrumb-item active">Dashboard</li>
                 </ol>
             </div>
-          
+
     </div>
 
 
@@ -461,7 +461,7 @@
 
 
     <footer class="footer">
-        <span>Copyright &copy; 2018 FixedPlus</span>
+        <span>Copyright &copy; 2022 FixedPlus</span>
     </footer>
 </section>
 

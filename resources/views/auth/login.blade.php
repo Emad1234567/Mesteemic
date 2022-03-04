@@ -13,7 +13,7 @@
 
         <!-- Custom Css-->
         <link href="assets/scss/style.css" rel="stylesheet">
-		
+
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -37,10 +37,10 @@
 								{{-- <img alt="" src="assets/img/icon.png" class="logo-icon margin-r-10"> --}}
 								<img alt="" src="{{asset('/mesteemic.png')}}" style="width:50%;"  class="toggle-none hidden-xs">
                             </div>
-                            <div class="misc-box">   
+                            <div class="misc-box">
                                 <form role="form" method="post" action="{{route('login')}}">
                                     @csrf
-                                    <div class="form-group">                                      
+                                    <div class="form-group">
                                         <label  for="exampleuser1">Username</label>
                                         <div class="group-icon">
                                         <input id="exampleuser1" type="text" name="email" value="admin@gmail.com" placeholder="Username" class="form-control" required="">
@@ -50,7 +50,7 @@
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Password</label>
                                         <div class="group-icon">
-                                        <input id="exampleInputPassword1" type="password" name="password" value="12345" placeholder="Password" class="form-control">
+                                        <input id="exampleInputPassword1" type="password" name="password" value="123456" placeholder="Password" class="form-control">
                                         <span class="icon-lock text-muted icon-input"></span>
                                         </div>
                                     </div>
@@ -61,7 +61,7 @@
 												<label for="checkbox2"> Remember Me </label>
 											</div>
                                         </div>
-                                       
+
                                         <div class="float-right">
                                             <button type="submit" class="btn btn-block btn-primary btn-rounded box-shadow">Login</button>
                                         </div>
@@ -97,7 +97,7 @@
         <script src="assets/lib/nano-scroll/jquery.nanoscroller.min.js"></script>
         <script src="assets/lib/metisMenu/metisMenu.min.js"></script>
         <script src="assets/js/custom.js"></script>
-		
+
     </body>
 
 <!-- Mirrored from www.aksisweb.com/theme/fixed/layouts-5/page-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Dec 2021 10:24:13 GMT -->

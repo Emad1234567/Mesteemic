@@ -13,7 +13,7 @@ class AdminController extends Controller
 {
     public function all_users()
     {
-          
+
         $users  = User::where('type','user')->where('is_deleted',0)->get();
         return view('Admin.all_users',compact('users'));
     }
@@ -33,17 +33,17 @@ class AdminController extends Controller
         User::where('id',$user_id)->update([
             'status'=>0,
          ]);
- 
+
          return redirect()->back()->with('mssg','User Activated');
     }
 
     public function user_delete($user_id)
     {
-        
+
         User::where('id',$user_id)->update([
             'is_deleted'=>1,
          ]);
- 
+
          return redirect()->back()->with('msg','User Deleted');
     }
 
@@ -56,13 +56,19 @@ class AdminController extends Controller
 
     public function add_category(Request $request)
     {
-       
-        $category = new Category();
-        $category->name = $request->name;
-        $category->contribution = $request->contribution;
-        $category->timeline = $request->date;
-        $category->currency_id = $request->currency;
-        $category->save();
+
+        $category = Category::create([
+            "name" => $request->name
+            ,"contribution" => $request->contribution
+            ,"timeline" => $request->date
+            ,"currency_id" => $request->currency
+            ,"loan_limit" => $request->loan_limit
+            ,"periodicals" => $request->periodicals
+            ,"person_limit" => $request->person_limit
+
+    ]);
+
+
 
         return redirect()->back()->with('mssg','Category Added');
     }
@@ -76,7 +82,7 @@ class AdminController extends Controller
              'currency_id'=>$request->currency,
 
         ]);
-        return redirect()->back()->with('mssg','Category Updated');
+        return redirect()->back()->with('mssg','Category has been updated');
 
     }
 
@@ -84,21 +90,21 @@ class AdminController extends Controller
     {
          $category_detail = Category::where('id',$category_id)->first();
 
-         if($category_detail->status == 0)
+         if($category_detail->status == "Active")
          {
             Category::where('id',$category_id)->update([
-                'status'=>1,
+                'status'=>"Disable",
              ]);
-     
-             return redirect()->back()->with('msg','Category DeActivated');
+
+             return redirect()->route('Categories')->with('msg','Category has been Disabled');
          }
          else
          {
             Category::where('id',$category_id)->update([
-                'status'=>0,
+                'status'=>"Active",
              ]);
-     
-             return redirect()->back()->with('mssg','Category Activated');
+
+             return redirect()->route('Categories')->with('mssg','Category has been activated');
          }
     }
 
@@ -107,7 +113,7 @@ class AdminController extends Controller
         Category::where('id',$category_id)->update([
             'is_deleted'=>1,
          ]);
- 
+
          return redirect()->back()->with('msg','Category Deleted');
     }
 
@@ -119,7 +125,7 @@ class AdminController extends Controller
 
     public function add_currency(Request $request)
     {
-      
+
         $currency = new Currency();
         $currency->name = $request->name;
         $currency->symbol = $request->symbol;
@@ -132,15 +138,15 @@ class AdminController extends Controller
 
     public function edit_currency(Request $request,$currency_id)
     {
-      
+
         Currency::where('id',$currency_id)->update([
             'name' => $request->name,
             'symbol' => $request->symbol,
             'state' => $request->state,
 
         ]);
-       
-    
+
+
         return redirect()->back()->with('mssg','Currency Updated');
 
     }
@@ -187,12 +193,12 @@ class AdminController extends Controller
     public function add_loanType(Request $request)
     {
         $loan_type = new Loan_type();
-        $loan_type->product_loan = $request->product_loan;
-        $loan_type->cash_loan = $request->cash_loan;
+        $loan_type->name = $request->product_loan;
+        // $loan_type->cash_loan = $request->cash_loan;
         $loan_type->save();
 
         return redirect()->back()->with('mssg','Loan Added');
-    
+
     }
 
     public function edit_loanType(Request $request,$loan_id)
@@ -202,9 +208,9 @@ class AdminController extends Controller
           'cash_loan'=> $request->cash_loan
 
         ]);
-      
+
         return redirect()->back()->with('mssg','Loan Updated');
-    
+
     }
 
     public function loan_active_deactive($loan_id)
@@ -242,7 +248,7 @@ class AdminController extends Controller
     {
          $payment_methods = Payment_method::where('is_deleted',0)->get();
          return view('Admin.payment_method',compact('payment_methods'));
-    }  
+    }
 
 
     public function add_payment_methods(Request $request)
@@ -251,13 +257,14 @@ class AdminController extends Controller
         $payment_method = new Payment_method();
         $payment_method->name = $request->name;
         $payment_method->type = $request->type;
+        $payment_method->currency_id = $request->currency_id;
         $payment_method->private_key = $request->private_key;
         $payment_method->public_key = $request->public_key;
         $payment_method->account_number = $request->acc_number;
         $payment_method->account_name = $request->acc_name;
         $payment_method->save();
 
-        return redirect()->back()->with('mssg','Payment Methods Added');
+        return redirect()->back()->with('mssg','Payment method has been added');
 
     }
 
@@ -271,7 +278,7 @@ class AdminController extends Controller
         'public_key' => $request->public_key,
         'account_number' => $request->acc_number,
         'account_name' => $request->acc_name,
-        
+
     ]);
 
         return redirect()->back()->with('mssg','Payment Methods Updated');

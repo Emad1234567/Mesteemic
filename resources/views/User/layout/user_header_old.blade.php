@@ -9,10 +9,8 @@
 				<div class="col">
 					<a class="admin-logo" href="index.html">
 						<h1>
-							<img alt="" src="{{ asset('mesteemic_mainsite.png')}}" class="logo-icon margin-r-10" style="
-                            height: 60px;
-                        ">
-							{{-- <img alt="Dark logo" src="{{ asset('mesteemic_mainsite.png')}}" class="toggle-none hidden-xs"> --}}
+							<img alt="" src="{{ asset('assets/img/icon.png')}}" class="logo-icon margin-r-10">
+							<img alt="" src="{{ asset('assets/img/logo-dark.png')}}" class="toggle-none hidden-xs">
 						</h1>
 					</a>
 					<div class="search-form hidden-xs">
@@ -22,10 +20,9 @@
 					</div>
 					<ul class="list-inline top-right-nav">
 						<li class="dropdown icons-dropdown d-none-m">
-                            {{-- class="dropdown-toggle " data-toggle="dropdown" --}}
-							<a  href="{{ route('chat') }}"><i class="fa fa-envelope"></i> <div class="notify setpos"> <span class="heartbit"></span> <span class="point"></span> </div></a>
+							<a class="dropdown-toggle " data-toggle="dropdown" href="#"><i class="fa fa-envelope"></i> <div class="notify setpos"> <span class="heartbit"></span> <span class="point"></span> </div></a>
 
-							{{-- <ul class="dropdown-menu top-dropdown lg-dropdown notification-dropdown">
+							<ul class="dropdown-menu top-dropdown lg-dropdown notification-dropdown">
 								<li>
 									<div class="dropdown-header">
 										<a class="float-right" href="#"><small>View All</small></a> Messages
@@ -84,7 +81,7 @@
 										</div>
 									</div>
 								</li>
-							</ul> --}}
+							</ul>
 						</li>
 						<li class="dropdown icons-dropdown d-none-m">
 							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-bell"></i> <div class="notify setpos"> <span class="heartbit"></span> <span class="point"></span> </div></a>
@@ -150,11 +147,11 @@
 									<a class="dropdown-item" href="javascript:%20void(0);"><i class="icon-bell"></i> Activities</a>
 								</li>
 								<li>
-									<a class="dropdown-item" href="{{ route('my-profile')}}"><i class="icon-user"></i> Profile</a>
+									<a class="dropdown-item" href="javascript:%20void(0);"><i class="icon-user"></i> Profile</a>
 								</li>
-								{{-- <li>
+								<li>
 									<a class="dropdown-item" href="javascript:%20void(0);"><i class="icon-settings"></i> Settings</a>
-								</li> --}}
+								</li>
 								<li class="dropdown-divider"></li>
 								<li>
 									<a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
@@ -272,10 +269,10 @@
 		</button>
 	</div>
 	<ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
-					<li><a href="{{ route('my-subscription') }}"><i class="fa fa-home"></i> Dashboard</a></li>
+					<li><a href="index.html"><i class="fa fa-home"></i> Dashboard</a></li>
 					 <li>
-						<a  href="#"><i class="fa fa-codepen"></i> My Plan</a>
-						{{-- <ul>
+						<a  href="#"><i class="fa fa-codepen"></i> Apps</a>
+						<ul>
 							<li>
 								<a href="#">Inbox</a>
 								<ul>
@@ -289,11 +286,11 @@
 							<li><a href="app-ticket.html">Support Ticket</a></li>
 							<li><a href="app-contact.html">Contact Grid</a></li>
 							<li><a href="app-contact-detail.html">Contact Detail</a></li>
-						</ul> --}}
+						</ul>
 					</li>
 					 <li>
-						<a  href="#"><i class="fa fa-cogs"></i>Apply for loan</a>
-						{{-- <ul>
+						<a  href="#"><i class="fa fa-cogs"></i>UI Elements</a>
+						<ul>
 							<li><a href="ui-jquery-elements.html">Jquery UI</a></li>
 							<li><a href="ui-bootstrap-elements.html">Bootstrap UI</a></li>
 							<li><a href="ui-typography.html">Typography</a></li>
@@ -314,31 +311,106 @@
 							<li><a href="ui-nestable.html">Nestable</a></li>
 							<li><a href="ui-treeview.html">Tree View</a></li>
 							<li><a href="ui-draggable-cards.html">Draggable Cards</a></li>
-						</ul> --}}
+						</ul>
 					</li>
 
-
+					 <li>
+						<a href="#"><i class="fa fa-file"></i> <span class="toggle-none">Forms <span class="fa arrow"></span></span></a>
+						<ul>
+							<li><a href="form-basic.html">Basic Elements</a></li>
+							<li><a href="form-validations.html">Form Validations</a></li>
+							<li><a href="form-masks.html">Form Masks</a></li>
+							<li><a href="form-picker.html">Form Picker</a></li>
+							<li><a href="form-editor.html">Text Editor</a></li>
+							<li><a href="form-file-upload.html">File upload</a></li>
+							<li><a href="form-wizard.html">Form Wizard</a></li>
+						</ul>
+					</li>
 
 					<li>
-						<a href="#"><i class="fa fa-table"></i> <span class="toggle-none">Products <span class="fa arrow"></span></span></a>
-						{{-- <ul>
+						<a href="#"><i class="fa fa-table"></i> <span class="toggle-none">Tables <span class="fa arrow"></span></span></a>
+						<ul>
 							<li><a href="table-basic.html">Basic Tables</a></li>
 							<li><a href="table-data.html">Data Tables</a></li>
 							<li><a href="table-js-grid.html">JsGrid Tables</a></li>
 							<li><a href="table-foo.html">Foo Tables</a></li>
-						</ul> --}}
+						</ul>
 					</li>
 
 					<li>
-						<a  href="{{ route('select-category') }}"><i class="fa fa-th"></i> <span class="toggle-none">Categories <span class="fa arrow"></span></span></a>
-					  {{-- <ul>
+						<a  href="#"><i class="fa fa-th"></i> <span class="toggle-none">Extras <span class="fa arrow"></span></span></a>
+					  <ul>
 						<li><a href="ui-icons.html">Icons</a></li>
+						<li><a href="ui-carousel.html">Carousel</a></li>
+						<li><a href="ui-range-slider.html">Range Slider</a></li>
 						<li><a href="ui-card-master.html">Card Master</a></li>
-					    </ul> --}}
+					<li>
+						<a  href="#"><span class="toggle-none">Widgets <span class="fa arrow"></span></span></a>
+						<ul>
+							<li><a href="widgets-apps.html">Widgets Apps</a></li>
+							<li><a href="widgets-data.html">Widgets Data</a></li>
+						</ul>
 					</li>
 					<li>
-						<a href="{{ route('my-tickets')}}"><i class="fa fa-folder"></i>Support </a>
-						{{-- <ul>
+						<a href="#"><span class="toggle-none">Charts <span class="fa arrow"></span></span></a>
+						<ul>
+							<li><a href="chart-flot.html">Flot</a></li>
+							<li><a href="chart-morris.html">Morris</a></li>
+							<li><a href="chart-radial.html">Radial</a></li>
+							<li><a href="chart-c3.html">C3</a></li>
+							<li><a href="chart-sparkline.html">Sparkline</a></li>
+							<li><a href="chart-rickshaw.html">Rickshaw</a></li>
+							<li><a href="chart-chartjs.html">ChartJs</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="#"><span class="toggle-none">Maps <span class="fa arrow"></span></span></a>
+						<ul>
+							<li><a href="map-vector.html">Vector map</a></li>
+							<li><a href="map-google.html">Google map</a></li>
+						</ul>
+					</li>
+					<li>
+						<a  href="#"><span class="toggle-none">E-Commerce <span class="fa arrow"></span></span></a>
+						<ul>
+							<li><a href="ecommerce-add.html">Add Product</a></li>
+							<li><a href="ecommerce-products.html">All Products</a></li>
+							<li><a href="ecommerce-orders.html">Orders</a></li>
+						</ul>
+					</li>
+					<li>
+						<a  href="#"><span class="toggle-none">Corporate <span class="fa arrow"></span></span></a>
+						<ul>
+							<li><a href="corporate-add.html">Add Pages</a></li>
+							<li><a href="corporate-pages.html">All Pages</a></li>
+						</ul>
+					</li>
+					<li>
+						<a  href="#">Ajax & Php</a>
+						<ul>
+							<li><a href="examples-add-and-update.html">Add and Update With Php</a></li>
+							<li><a href="examples-delete.html">Delete With Php</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="#">Multi Level</a>
+						<ul>
+							<li><a href="#">Level 1</a></li>
+							<li><a href="#">Level 2</a>
+								<ul>
+									<li><a href="#">Level 2</a></li>
+									<li><a href="#">Level 2</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					</ul>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-folder"></i>Sample </a>
+						<ul>
 							<li><a href="page-blank.html">Blank Page</a></li>
 							<li><a href="page-login.html">Login</a></li>
 							<li><a href="page-register.html">Register</a></li>
@@ -351,7 +423,7 @@
 							<li><a href="page-profile.html">Profile</a></li>
 							<li><a href="page-faqs.html">Faqs</a></li>
 							<li><a href="page-pricing.html">Pricing</a></li>
-						</ul> --}}
+						</ul>
 					</li>
 				</ul>
 				</nav>

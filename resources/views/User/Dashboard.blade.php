@@ -1,5 +1,5 @@
 
-   
+
 
 @extends('User.layout.user_header')
 <!DOCTYPE html>
@@ -8,7 +8,7 @@
         @include('User.user_header_files')
 @section('content')
 <div class="row">
-			
+
     <div class="col-md-3">
         <div class="widget  bg-light">
             <div class="row row-table ">
@@ -25,7 +25,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="col-md-3">
         <div class="widget  bg-light">
             <div class="row row-table ">
@@ -42,7 +42,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="col-md-3">
         <div class="widget  bg-light">
             <div class="row row-table ">
@@ -59,7 +59,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="col-md-3">
         <div class="widget  bg-light">
             <div class="row row-table ">
@@ -82,7 +82,7 @@
     <div class="col-md-12">
       <div class="card ">
             <div class="card-header">
-                Sales Overview			
+                Sales Overview
                 <p class="text-muted">Lorem Ipsum is simply dummy text of the printing</p>
             </div>
             <div class="card-body">
@@ -108,7 +108,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="col-md-4">
       <div class="card">
             <div class="card-header">
@@ -137,15 +137,15 @@
           </div>
             <div class="comment-widgets">
               <div class="d-flex flex-row comment-row">
-                <div class="mr-2"><img alt="user" class="rounded-circle" src="assets/img/avtar-1.png" width="50"></div>
+                <div class="mr-2"><img alt="user" class="rounded-circle" src="{{ asset('assets/img/avtar-1.png') }}"  width="50"></div>
                 <div class="comment-text w-100">
                   <h5>John Doe</h5>
                   <p class="m-b-5">Lorem Ipsum is simply dummy text of the printing and type setting industry.</p>
                   <div class="comment-footer">
-                    <span class="text-muted pull-right">April 8, 2018</span> 
-                    <span class="label label-info">Pending</span> 
+                    <span class="text-muted pull-right">April 8, 2018</span>
+                    <span class="label label-info">Pending</span>
                     <span class="action-icons">
-                        <a href="javascript:void(0)"><i class="ti-pencil-alt"></i></a> 
+                        <a href="javascript:void(0)"><i class="ti-pencil-alt"></i></a>
                         <a href="javascript:void(0)"><i class="ti-check"></i></a>
                         <a href="javascript:void(0)"><i class="ti-heart"></i></a>
                     </span>
@@ -154,16 +154,16 @@
               </div>
               <div class="d-flex flex-row comment-row active">
                 <div class="mr-2">
-                  <span class="round"><img alt="user" src="assets/img/avtar-2.png" width="50"></span>
+                  <span class="round"><img alt="user" src="{{ asset('assets/img/avtar-2.png') }}"  width="50"></span>
                 </div>
                 <div class="comment-text active w-100">
                   <h5>John Doe</h5>
                   <p class="m-b-5">Lorem Ipsum is simply dummy text of the printing and type setting industry.</p>
                   <div class="comment-footer">
-                    <span class="text-muted pull-right">April 7, 2018</span> 
-                    <span class="label label-success">Approved</span> 
+                    <span class="text-muted pull-right">April 7, 2018</span>
+                    <span class="label label-success">Approved</span>
                     <span class="action-icons">
-                        <a href="javascript:void(0)"><i class="ti-pencil-alt"></i></a> 
+                        <a href="javascript:void(0)"><i class="ti-pencil-alt"></i></a>
                         <a href="javascript:void(0)"><i class="ti-check"></i></a>
                         <a href="javascript:void(0)"><i class="ti-heart"></i></a>
                     </span>
@@ -172,7 +172,7 @@
               </div><!-- Comment Row -->
               <div class="d-flex flex-row comment-row">
                 <div class="mr-2">
-                  <span class="round"><img alt="user" src="assets/img/avtar-3.png" width="50"></span>
+                  <span class="round"><img alt="user" src="{{ asset('assets/img/avtar-3.png') }}"  width="50"></span>
                 </div>
                 <div class="comment-text w-100">
                   <h5>John Doe</h5>
@@ -184,7 +184,7 @@
               </div><!-- Comment Row -->
               <div class="d-flex flex-row comment-row">
                 <div class="mr-2">
-                  <span class="round"><img alt="user" src="assets/img/avtar-4.png" width="50"></span>
+                  <span class="round"><img alt="user" src="{{ asset('assets/img/avtar-4.png') }}"  width="50"></span>
                 </div>
                 <div class="comment-text w-100">
                   <h5>John Doe</h5>
@@ -196,16 +196,16 @@
               </div>
               <div class="d-flex flex-row comment-row">
                 <div class="mr-2">
-                  <span class="round"><img alt="user" src="assets/img/avtar-2.png" width="50"></span>
+                  <span class="round"><img alt="user" src="{{ asset('assets/img/avtar-2.png') }}"  width="50"></span>
                 </div>
                 <div class="comment-text active w-100">
                   <h5>John Doe</h5>
                   <p class="m-b-5">Lorem Ipsum is simply dummy text of the printing and type setting industry.</p>
                   <div class="comment-footer">
-                    <span class="text-muted pull-right">April 7, 2018</span> 
-                    <span class="label label-success">Approved</span> 
+                    <span class="text-muted pull-right">April 7, 2018</span>
+                    <span class="label label-success">Approved</span>
                     <span class="action-icons">
-                        <a href="javascript:void(0)"><i class="ti-pencil-alt"></i></a> 
+                        <a href="javascript:void(0)"><i class="ti-pencil-alt"></i></a>
                         <a href="javascript:void(0)"><i class="ti-check"></i></a>
                         <a href="javascript:void(0)"><i class="ti-heart"></i></a>
                     </span>
@@ -216,7 +216,7 @@
 
         </div>
     </div>
-    
+
     <div class="col-md-6">
         <div class="card">
             <div class="card-header">
@@ -255,7 +255,7 @@
                            <div class="checkbox checkbox-primary margin-r-5">
                                 <input id="checkbox1" type="checkbox" >
                                 <label for="checkbox1"> Lorem Ipsum is simply dummy text of the 	<small class="label label-primary"><i class="fa fa-clock-o"></i> 3 Mins</small></label>
-                            
+
                             </div>
                         </li>
                         <li>
@@ -307,13 +307,13 @@
                 Chat
                 <p class="text-muted">Lorem ipsum dolor sit amet</p>
             </div>
-            
+
             <div class="card-body">
                 <div class="scrollDiv">
                     <ul class="chat-list list-unstyled">
                         <li class="clearfix chat-element media">
                             <a href='javascript: void(0);' class="float-left">
-                                <img src="assets/img/avtar-2.png" alt="" class="rounded-circle">
+                                <img src="{{ asset('assets/img/avtar-2.png') }}"  alt="" class="rounded-circle">
                             </a>
                             <div class="media-body ">
                                 <div class="speech-box">
@@ -339,12 +339,12 @@
                                 </div>
                             </div>
                             <a href='javascript: void(0);' class="float-right">
-                                <img src="assets/img/avtar-2.png" alt="" class="rounded-circle">
+                                <img src="{{ asset('assets/img/avtar-2.png') }}"  alt="" class="rounded-circle">
                             </a>
                         </li>
                         <li class="clearfix chat-element media">
                             <a href='javascript: void(0);' class="float-left">
-                                <img src="assets/img/avtar-2.png" alt="" class="rounded-circle">
+                                <img src="{{ asset('assets/img/avtar-2.png') }}"  alt="" class="rounded-circle">
                             </a>
                             <div class="media-body ">
                                 <div class="speech-box">
@@ -359,7 +359,7 @@
                         </li>
                          <li class="clearfix chat-element media">
                             <a href='javascript: void(0);' class="float-left">
-                                <img src="assets/img/avtar-2.png" alt="" class="rounded-circle">
+                                <img src="{{ asset('assets/img/avtar-2.png') }}"  alt="" class="rounded-circle">
                             </a>
                             <div class="media-body ">
                                 <div class="speech-box">
@@ -388,7 +388,7 @@
 
 </div>
 
-                
+
     <div class="row">
         <div class="col-lg-8 col-xlg-9">
             <div class="card">
@@ -400,56 +400,56 @@
 
                     <div class="profiletimeline">
                         <div class="sl-item">
-                            <div class="sl-left"> <img src="assets/img/avtar-1.png" alt="user" class="rounded-circle"> </div>
+                            <div class="sl-left"> <img src="{{ asset('assets/img/avtar-1.png') }}"  alt="user" class="rounded-circle"> </div>
                             <div class="sl-right">
                                 <div><a href="#" class="link">John Doe</a> <span class="sl-date">12 minutes ago</span>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
                                     <div class="row">
-                                        <div class="col-lg-3 col-md-6 mb-2"><img src="assets/img/gallery/1s.jpg" alt="user" class="img-fluid rounded"></div>
-                                        <div class="col-lg-3 col-md-6 mb-2"><img src="assets/img/gallery/2s.jpg" alt="user" class="img-fluid rounded"></div>
-                                        <div class="col-lg-3 col-md-6 mb-2"><img src="assets/img/gallery/3s.jpg" alt="user" class="img-fluid rounded"></div>
-                                        <div class="col-lg-3 col-md-6 mb-2"><img src="assets/img/gallery/4s.jpg" alt="user" class="img-fluid rounded"></div>
+                                        <div class="col-lg-3 col-md-6 mb-2"><img src="{{ asset('assets/img/gallery/1s.jpg') }}" alt="user" class="img-fluid rounded"></div>
+                                        <div class="col-lg-3 col-md-6 mb-2"><img src="{{ asset('assets/img/gallery/2s.jpg') }}" alt="user" class="img-fluid rounded"></div>
+                                        <div class="col-lg-3 col-md-6 mb-2"><img src="{{ asset('assets/img/gallery/3s.jpg') }}" alt="user" class="img-fluid rounded"></div>
+                                        <div class="col-lg-3 col-md-6 mb-2"><img src="{{ asset('assets/img/gallery/4s.jpg') }}" alt="user" class="img-fluid rounded"></div>
                                     </div>
                                     <div class="like-comm">
-                                        <a href="javascript:void(0)" class="link mr-2">385 comment</a> 
-                                        <a href="javascript:void(0)" class="link mr-2"><i class="fa fa-heart text-danger"></i> 174 Love</a> 
+                                        <a href="javascript:void(0)" class="link mr-2">385 comment</a>
+                                        <a href="javascript:void(0)" class="link mr-2"><i class="fa fa-heart text-danger"></i> 174 Love</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <hr>
                         <div class="sl-item">
-                            <div class="sl-left"> <img src="assets/img/avtar-2.png" alt="user" class="rounded-circle"> </div>
+                            <div class="sl-left"> <img src="{{ asset('assets/img/avtar-2.png') }}"  alt="user" class="rounded-circle"> </div>
                             <div class="sl-right">
                                 <div> <a href="#" class="link">John Doe</a> <span class="sl-date">8 minutes ago</span>
                                     <div class="mt-2 row">
-                                        <div class="col-md-3 col-xs-12"><img src="assets/img/gallery/1s.jpg" alt="user" class="img-fluid rounded"></div>
+                                        <div class="col-md-3 col-xs-12"><img src="{{ asset('assets/img/gallery/1s.jpg') }}" alt="user" class="img-fluid rounded"></div>
                                         <div class="col-md-9 col-xs-12">
                                         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. </p> </div>
                                     </div>
-                                    <div class="like-comm mt-2"> 
-                                    <a href="javascript:void(0)" class="link mr-2">248 comment</a> 
-                                    <a href="javascript:void(0)" class="link mr-2"><i class="fa fa-heart text-danger"></i> 84 Love</a> 
+                                    <div class="like-comm mt-2">
+                                    <a href="javascript:void(0)" class="link mr-2">248 comment</a>
+                                    <a href="javascript:void(0)" class="link mr-2"><i class="fa fa-heart text-danger"></i> 84 Love</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <hr>
                         <div class="sl-item">
-                            <div class="sl-left"> <img src="assets/img/avtar-3.png" alt="user"> </div>
+                            <div class="sl-left"> <img src="{{ asset('assets/img/avtar-3.png') }}"  alt="user"> </div>
                             <div class="sl-right">
                                 <div><a href="#" class="link">John Doe</a> <span class="sl-date">6 minutes ago</span>
                                     <p class="mt-1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper </p>
                                 </div>
-                                <div class="like-comm mt-2"> 
-                                <a href="javascript:void(0)" class="link mr-2">68 comment</a> 
-                                <a href="javascript:void(0)" class="link mr-2"><i class="fa fa-heart text-danger"></i> 36 Love</a> 
+                                <div class="like-comm mt-2">
+                                <a href="javascript:void(0)" class="link mr-2">68 comment</a>
+                                <a href="javascript:void(0)" class="link mr-2"><i class="fa fa-heart text-danger"></i> 36 Love</a>
                                 </div>
                             </div>
                         </div>
                         <hr>
                         <div class="sl-item">
-                            <div class="sl-left"> <img src="assets/img/avtar-4.png" alt="user" class="rounded-circle"> </div>
+                            <div class="sl-left"> <img src="{{ asset('assets/img/avtar-4.png') }}"  alt="user" class="rounded-circle"> </div>
                             <div class="sl-right">
                                 <div><a href="#" class="link">John Doe</a> <span class="sl-date">4 minutes ago</span>
                                     <blockquote class="mt-1">
@@ -462,7 +462,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="col-md-4">
         <div class="card weather">
                 <div class="city-selected">
@@ -508,7 +508,7 @@
                 </div>
             </div>
 
-    
+
             <div class="card">
                 <div class="card-header card-default">
                 Browser Stats
@@ -518,32 +518,32 @@
                     <table class="table browser no-border">
                         <tbody>
                             <tr>
-                                <td><img src="assets/img/browser/chrome-logo.png" alt="logo"></td>
+                                <td><img src="{{ asset('assets/img/browser/chrome-logo.png') }}"  alt="logo"></td>
                                 <td>Google Chrome</td>
                                 <td class="text-right"><span class="label label-primary">33%</span></td>
                             </tr>
                             <tr>
-                                <td><img src="assets/img/browser/firefox-logo.png" alt="logo"></td>
+                                <td><img src="{{ asset('assets/img/browser/firefox-logo.png') }}"  alt="logo"></td>
                                 <td>Mozila Firefox</td>
                                 <td class="text-right"><span class="label label-success">27%</span></td>
                             </tr>
                             <tr>
-                                <td><img src="assets/img/browser/safari-logo.png" alt="logo"></td>
+                                <td><img src="{{ asset('assets/img/browser/safari-logo.png') }}"  alt="logo"></td>
                                 <td>Apple Safari</td>
                                 <td class="text-right"><span class="label label-info">17%</span></td>
                             </tr>
                             <tr>
-                                <td><img src="assets/img/browser/internet-logo.png" alt="logo"></td>
+                                <td><img src="{{ asset('assets/img/browser/internet-logo.png') }}"  alt="logo"></td>
                                 <td>Internet Explorer</td>
                                 <td class="text-right"><span class="label label-warning">11%</span></td>
                             </tr>
                             <tr>
-                                <td><img src="assets/img/browser/opera-logo.png" alt="logo"></td>
+                                <td><img src="{{ asset('assets/img/browser/opera-logo.png') }}"  alt="logo"></td>
                                 <td>Opera mini</td>
                                 <td class="text-right"><span class="label label-danger">8%</span></td>
                             </tr>
                             <tr>
-                                <td><img src="assets/img/browser/internet-logo.png" alt="logo"></td>
+                                <td><img src="{{ asset('assets/img/browser/internet-logo.png') }}"  alt="logo"></td>
                                 <td>Microsoft edge</td>
                                 <td class="text-right"><span class="label label-indigo">4%</span></td>
                             </tr>
@@ -552,9 +552,9 @@
                 </div>
             </div>
 
-        
+
         </div>
-        
+
     </div>
 </div>
 @include('User.script_files')
