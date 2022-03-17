@@ -29,9 +29,9 @@ Route::get('/Admin',function(){
     return view('Admin.Dashboard');
 });
 
-Route::get('/User',function(){
-    return view('User.Dashboard');
-});
+// Route::get('/User',function(){
+//     return view('User.Dashboard');
+// });
 
 Route::get('/Faqs',function(){
     return view('faqs');
@@ -45,6 +45,7 @@ Route::prefix('User')->group(function ()
     // Route::get('user_deactivate/{user_id}', [AdminController::class, 'user_deactivate'])->name('user_deactivate');
     // Route::get('user_activate/{user_id}', [AdminController::class, 'user_activate'])->name('user_activate');
 
+    Route::get('/', [UserController::class, 'Dashboard'])->name('dashboard');
     Route::get('my-profile', [UserController::class, 'myProfile'])->name('my-profile');
     Route::get('select-category', [UserController::class, 'selectCategory'])->name('select-category');
     Route::get('chat', [UserController::class, 'chat'])->name('chat');
@@ -53,6 +54,8 @@ Route::prefix('User')->group(function ()
     Route::get('apply-loan', [UserController::class, 'ApplyLoan'])->name('apply-loan');
     Route::get('loan-request', [UserController::class, 'LoanRequest'])->name('loan-request');
     Route::get('apply-loan', [UserController::class, 'ApplyLoan'])->name('apply-loan');
+    Route::get('site-products', [UserController::class, 'site_products'])->name('site_products');
+
 });
 
 

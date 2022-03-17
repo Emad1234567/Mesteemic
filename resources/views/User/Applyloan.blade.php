@@ -10,33 +10,31 @@
 
 <section class="container">
 
-    <div class="alert bg-success alert-dismissible " role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> <strong>Success!</strong> Product successfully added. </div>
+    {{-- <div class="alert bg-success alert-dismissible " role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> <strong>Success!</strong> Product successfully added. </div> --}}
 
     <div class="row">
         <div class="col">
             <div class="card">
                 <div class="card-header card-default">
-                    Add Products
-                    <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                    My Loan Applications
+                    {{-- <p class="text-muted">Lorem ipsum dolor sit amet</p> --}}
                 </div>
                 <div class="card-body">
 
                     <form method="get" action="" class="form-horizontal">
 
                             <div class="form-group">
-                                <label>Product Name</label>
-                                <input type="text" placeholder="New product name" class="form-control form-control-rounded">
+                                <label>Title</label>
+                                <input type="text" placeholder="Title of application" class="form-control form-control-rounded">
                             </div>
 
                             <div class="form-group">
-                                <label>Main Category</label>
+                                <label>Loan Type</label>
                                 <select name="account" class="form-control m-b">
-                                    <option>Option 1</option>
-                                    <option>Option 2</option>
-                                    <option>Option 3</option>
-                                    <option>Option 4</option>
+                                    <option value="Cash">Cash</option>
+                                    <option value="Loan">Loan</option>
                                 </select>
-                                <small class="text-muted">Lorem ipsum dolor sit amet</small>
+                                <small class="text-muted">We are offering Cash loan as well as product loan</small>
                             </div>
                             <div class="form-group">
                                 <label>Current Price</label>
@@ -63,10 +61,10 @@
 
                             <div class="form-group">
                                 <label>Description</label>
-                                <div class="summernote" style="display: none;"><p>Hello Summernote</p></div>
+                                <div class="summernote" style=""><p>Hello Summernote</p></div>
                             </div>
 
-                            <div class="form-group">
+                            {{-- <div class="form-group">
                                 <label>Featured Image</label>
                                 <div class="fileinput-new" data-provides="fileinput">
                                   <div class="fileinput-preview" data-trigger="fileinput" style="width: 200px; height:150px;"></div>
@@ -77,7 +75,7 @@
                                     </span>
                                     <a href="#" class="btn btn-danger fileinput-exists" data-dismiss="fileinput">Remove</a>
                                 </div>
-                            </div>
+                            </div> --}}
 
 
                             <div class="form-group">
@@ -112,8 +110,8 @@
                             </div>
 
                             <a href="#" class="btn btn-success btn-icon"><i class="fa fa-floppy-o "></i>Save</a>
-                            <a href="#" class="btn btn-warning btn-icon"><i class="fa fa-reply"></i>Back</a>
-                            <a href="#" class="btn btn-danger btn-icon"><i class="fa fa-times"></i>Cancel</a>
+                            {{-- <a href="#" class="btn btn-warning btn-icon"><i class="fa fa-reply"></i>Back</a>
+                            <a href="#" class="btn btn-danger btn-icon"><i class="fa fa-times"></i>Cancel</a> --}}
 
                     </form>
                 </div>

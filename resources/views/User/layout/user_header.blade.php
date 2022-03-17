@@ -7,19 +7,19 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<a class="admin-logo" href="index.html">
+					<a class="admin-logo" href="{{route('dashboard')}}">
 						<h1>
 							<img alt="" src="{{ asset('mesteemic_mainsite.png')}}" class="logo-icon margin-r-10" style="
-                            height: 60px;
+                            height: 45px;
                         ">
 							{{-- <img alt="Dark logo" src="{{ asset('mesteemic_mainsite.png')}}" class="toggle-none hidden-xs"> --}}
 						</h1>
 					</a>
-					<div class="search-form hidden-xs">
+					{{-- <div class="search-form hidden-xs">
 						<form>
 							<input class="form-control" placeholder="Search for..." type="text"> <button class="btn-search" type="button"><i class="fa fa-search"></i></button>
 						</form>
-					</div>
+					</div> --}}
 					<ul class="list-inline top-right-nav">
 						<li class="dropdown icons-dropdown d-none-m">
                             {{-- class="dropdown-toggle " data-toggle="dropdown" --}}
@@ -272,9 +272,9 @@
 		</button>
 	</div>
 	<ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
-					<li><a href="{{ route('my-subscription') }}"><i class="fa fa-home"></i> Dashboard</a></li>
+					<li><a href="{{ route('dashboard') }}"><i class="fa fa-home"></i> Dashboard</a></li>
 					 <li>
-						<a  href="#"><i class="fa fa-codepen"></i> My Plan</a>
+						<a  href="{{ route('my-subscription') }}"><i class="fa fa-codepen"></i> My Plan</a>
 						{{-- <ul>
 							<li>
 								<a href="#">Inbox</a>
@@ -292,7 +292,7 @@
 						</ul> --}}
 					</li>
 					 <li>
-						<a  href="#"><i class="fa fa-cogs"></i>Apply for loan</a>
+						<a  href="{{ route('loan-request')}}"><i class="fa fa-cogs"></i>Apply for loan</a>
 						{{-- <ul>
 							<li><a href="ui-jquery-elements.html">Jquery UI</a></li>
 							<li><a href="ui-bootstrap-elements.html">Bootstrap UI</a></li>

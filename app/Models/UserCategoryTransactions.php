@@ -5,8 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User_Category extends Model
+class UserCategoryTransactions extends Model
 {
     use HasFactory;
-    protected $fillable = ['category_id', 'user_id', 'my_rank', 'payout_status'];
+    protected $fillable = ['user_id' ,'category_id' ,'payment_methods_id' ,'status' ,'due_date'];
 }

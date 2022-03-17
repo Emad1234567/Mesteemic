@@ -20,10 +20,10 @@
                         <a href="javascript: void(0);" class="btn btn-success btn-icon"><i class="fa fa-plus"></i> Create New</a>
                     </div>
                     Support Ticket
-                    <p class="text-muted">Lorem Ipsum is simply dummy text of the <code>printing and typesetting</code> industry.</p>
+                    {{-- <p class="text-muted">Lorem Ipsum is simply dummy text of the <code>printing and typesetting</code> industry.</p> --}}
                 </div>
 
-                <div class="card-body">
+                {{-- <div class="card-body">
                     <div class="row">
                     <div class="col">
                         <div class="widget bg-primary padding-15">
@@ -65,7 +65,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
                         <table id="datatable" class="table table-striped nowrap dataTable no-footer dtr-inline" width="100%">
                             <thead>
@@ -79,9 +79,9 @@
                                     <th>
                                         <strong>Email</strong>
                                     </th>
-                                     <th>
+                                     {{-- <th>
                                         <strong>Subject</strong>
-                                    </th>
+                                    </th> --}}
                                     <th>
                                         <strong>Status</strong>
                                     </th>
@@ -94,150 +94,17 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>1425</td>
-                                    <td>
-                                        <img alt="user" class="media-box-object rounded-circle mr-2" src="assets/img/avtar-2.png" width="30">
-                                        John Doe
-                                    </td>
-                                    <td>john-doe@domain.com</td>
-                                    <td>How to change colors</td>
-                                    <td class="text-center">
-                                        <span class="label label-warning">New</span>
-                                    </td>
-                                    <td>15/07/2018</td>
-                                    <td class="text-center">
-                                        <button type="button" class="btn btn-sm btn-success"><i class="fa fa-reply"></i></button>
-                                        <button type="button" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
-                                    </td>
-                                </tr>
-                               <tr>
-                                    <td>1426</td>
-                                    <td>
-                                        <img alt="user" class="media-box-object rounded-circle mr-2" src="assets/img/avtar-1.png" width="30">
-                                        Govinda Doe
-                                    </td>
-                                    <td>govinda-doe@domain.com</td>
-                                    <td>How to change colors</td>
-                                    <td class="text-center">
-                                        <span class="label label-success">Complete</span>
-                                    </td>
-                                    <td>09/07/2018</td>
-                                    <td class="text-center">
-                                        <button type="button" class="btn btn-sm btn-success"><i class="fa fa-reply"></i></button>
-                                        <button type="button" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1427</td>
-                                    <td>
-                                        <img alt="user" class="media-box-object rounded-circle mr-2" src="assets/img/avtar-3.png" width="30">
-                                        Megan Doe
-                                    </td>
-                                    <td>megan-doe@domain.com</td>
-                                    <td>How to change colors</td>
-                                    <td class="text-center">
-                                        <span class="label label-warning">New</span>
-                                    </td>
-                                    <td>15/07/2018</td>
-                                    <td class="text-center">
-                                        <button type="button" class="btn btn-sm btn-success"><i class="fa fa-reply"></i></button>
-                                        <button type="button" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1428</td>
-                                    <td>
-                                        <img alt="user" class="media-box-object rounded-circle mr-2" src="assets/img/avtar-4.png" width="30">
-                                        Hritic Doe
-                                    </td>
-                                    <td>hritic-doe@domain.com</td>
-                                    <td>How to change colors</td>
-                                    <td class="text-center">
-                                        <span class="label label-success">Complete</span>
-                                    </td>
-                                    <td>13/07/2018</td>
-                                    <td class="text-center">
-                                        <button type="button" class="btn btn-sm btn-success"><i class="fa fa-reply"></i></button>
-                                        <button type="button" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1429</td>
-                                    <td>
-                                        <img alt="user" class="media-box-object rounded-circle mr-2" src="assets/img/avtar-5.png" width="30">
-                                        Bianca Doe
-                                    </td>
-                                    <td>bianca-doe@domain.com</td>
-                                    <td>How to change colors</td>
-                                    <td class="text-center">
-                                        <span class="label label-success">Complete</span>
-                                    </td>
-                                    <td>11/07/2018</td>
-                                    <td class="text-center">
-                                        <button type="button" class="btn btn-sm btn-success"><i class="fa fa-reply"></i></button>
-                                        <button type="button" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1430</td>
-                                    <td>
-                                        <img alt="user" class="media-box-object rounded-circle mr-2" src="assets/img/avtar-6.png" width="30">
-                                        John Doe
-                                    </td>
-                                    <td>john-doe@domain.com</td>
-                                    <td>How to change colors</td>
-                                    <td class="text-center">
-                                        <span class="label label-warning">New</span>
-                                    </td>
-                                    <td>14/07/2018</td>
-                                    <td class="text-center">
-                                        <button type="button" class="btn btn-sm btn-success"><i class="fa fa-reply"></i></button>
-                                        <button type="button" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1431</td>
-                                    <td>
-                                        <img alt="user" class="media-box-object rounded-circle mr-2" src="assets/img/avtar-7.png" width="30">
-                                        Govinda Doe
-                                    </td>
-                                    <td>govinda-doe@domain.com</td>
-                                    <td>How to change colors</td>
-                                    <td class="text-center">
-                                        <span class="label label-success">Complete</span>
-                                    </td>
-                                    <td>15/07/2018</td>
-                                    <td class="text-center">
-                                        <button type="button" class="btn btn-sm btn-success"><i class="fa fa-reply"></i></button>
-                                        <button type="button" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1432</td>
-                                    <td>
-                                        <img alt="user" class="media-box-object rounded-circle mr-2" src="assets/img/avtar-8.png" width="30">
-                                        Megan Doe
-                                    </td>
-                                    <td>megan-doe@domain.com</td>
-                                    <td>How to change colors</td>
-                                    <td class="text-center">
-                                        <span class="label label-danger">Pending</span>
-                                    </td>
-                                    <td>12/07/2018</td>
-                                    <td class="text-center">
-                                        <button type="button" class="btn btn-sm btn-success"><i class="fa fa-reply"></i></button>
-                                        <button type="button" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
-                                    </td>
-                                </tr>
+
+
+
                                 <tr>
                                     <td>1433</td>
                                     <td>
-                                        <img alt="user" class="media-box-object rounded-circle mr-2" src="assets/img/avtar-3.png" width="30">
+                                        {{-- <img alt="user" class="media-box-object rounded-circle mr-2" src="assets/img/avtar-3.png" width="30"> --}}
                                         Hritic Doe
                                     </td>
                                     <td>hritic-doe@domain.com</td>
-                                    <td>How to change colors</td>
+                                    {{-- <td>How to change colors</td> --}}
                                     <td class="text-center">
                                         <span class="label label-warning">New</span>
                                     </td>
@@ -250,11 +117,11 @@
                                 <tr>
                                     <td>1434</td>
                                     <td>
-                                        <img alt="user" class="media-box-object rounded-circle mr-2" src="assets/img/avtar-1.png" width="30">
+                                        {{-- <img alt="user" class="media-box-object rounded-circle mr-2" src="assets/img/avtar-1.png" width="30"> --}}
                                         John Doe
                                     </td>
                                     <td>john-doe@domain.com</td>
-                                    <td>How to change colors</td>
+                                    {{-- <td>How to change colors</td> --}}
                                     <td class="text-center">
                                         <span class="label label-danger">Pending</span>
                                     </td>

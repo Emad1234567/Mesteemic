@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-
+use App\Models\Currency;
 class Category extends Model
 {
     use HasFactory;
@@ -19,4 +19,9 @@ class Category extends Model
         ,"person_limit"
         ,"is_deleted"
     ];
+
+    public function currency()
+    {
+        return $this->belongsTo(Currency::class);
+    }
 }

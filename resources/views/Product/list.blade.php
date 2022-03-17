@@ -1,6 +1,3 @@
-
-
-
 @extends('User.layout.user_header')
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +12,7 @@
                     <div class="float-right mt-10">
                         <a href="javascript: void(0);" class="btn btn-success btn-icon"><i class="fa fa-plus"></i> Create Post</a>
                     </div>
-                Recent Post
+                Products
                 {{-- <p class="text-muted">Lorem ipsum dolor sit amet</p> --}}
                 </div>
                 <div class="card-body">
@@ -24,7 +21,7 @@
                         <div class="sl-item">
                             <div class="sl-left"> <img src="{{ asset('assets/img/avtar-1.png') }}"  alt="user" class="rounded-circle"> </div>
                             <div class="sl-right">
-                                <div><a href="#" class="link">John Doe</a> <span class="sl-date">12 minutes ago</span>
+                                <div><a href="#" class="link">John Doe</a> <span class="sl-date">12 minutes ago</span><br><br> <a href="#" class="link">Price: 3000 ₦</a>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
                                     <div class="row">
                                         <div class="col-lg-3 col-md-6 mb-2"><img src="{{ asset('assets/img/gallery/1s.jpg') }}" alt="user" class="img-fluid rounded"></div>
@@ -33,7 +30,7 @@
                                         <div class="col-lg-3 col-md-6 mb-2"><img src="{{ asset('assets/img/gallery/4s.jpg') }}" alt="user" class="img-fluid rounded"></div>
                                     </div>
                                     <div class="like-comm">
-                                        <a href="javascript:void(0)" class="link mr-2">385 comment</a>
+                                        {{-- <a href="javascript:void(0)" class="link mr-2">385 comment</a> --}}
                                         <a href="javascript:void(0)" class="link mr-2"><i class="fa fa-heart text-danger"></i> 174 Love</a>
                                     </div>
                                 </div>
@@ -50,7 +47,7 @@
                                         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. </p> </div>
                                     </div>
                                     <div class="like-comm mt-2">
-                                    <a href="javascript:void(0)" class="link mr-2">248 comment</a>
+                                    {{-- <a href="javascript:void(0)" class="link mr-2">248 comment</a> --}}
                                     <a href="javascript:void(0)" class="link mr-2"><i class="fa fa-heart text-danger"></i> 84 Love</a>
                                     </div>
                                 </div>
@@ -64,13 +61,13 @@
                                     <p class="mt-1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper </p>
                                 </div>
                                 <div class="like-comm mt-2">
-                                <a href="javascript:void(0)" class="link mr-2">68 comment</a>
+                                {{-- <a href="javascript:void(0)" class="link mr-2">68 comment</a> --}}
                                 <a href="javascript:void(0)" class="link mr-2"><i class="fa fa-heart text-danger"></i> 36 Love</a>
                                 </div>
                             </div>
                         </div>
                         <hr>
-                        <div class="sl-item">
+                        {{-- <div class="sl-item">
                             <div class="sl-left"> <img src="{{ asset('assets/img/avtar-4.png') }}"  alt="user" class="rounded-circle"> </div>
                             <div class="sl-right">
                                 <div><a href="#" class="link">John Doe</a> <span class="sl-date">4 minutes ago</span>
@@ -79,7 +76,7 @@
                                     </blockquote>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -133,18 +130,27 @@
 
             <div class="card">
                 <div class="card-header card-default">
-                Recent chats
-                <p class="text-muted">Lorem ipsum dolor sit amet</p>
+                Product Categories
+                {{-- <p class="text-muted">Lorem ipsum dolor sit amet</p> --}}
                 </div>
                 <div class="card-body">
                     <table class="table browser no-border">
                         <tbody>
+                            @forelse ($categories as $category)
                             <tr>
-                                <td><img src="{{ asset('assets/img/browser/chrome-logo.png') }}"  alt="logo"></td>
-                                <td>Google Chrome</td>
-                                <td class="text-right"><span class="label label-primary">33%</span></td>
+                                <td><img src="{{ asset('assets/img/box_cat.png') }}" style="
+                                    height: 30px;
+                                " alt="logo"></td>
+                                <td>{{$category->name}}</td>
+                                <td class="text-right"><span class="label label-primary">10</span></td>
                             </tr>
-                            <tr>
+
+                            @empty
+                            <div class="alert bg-success alert-dismissible " role="alert"> Categories will be available Soon. </div>
+
+                            @endforelse
+
+                            {{-- <tr>
                                 <td><img src="{{ asset('assets/img/browser/firefox-logo.png') }}"  alt="logo"></td>
                                 <td>Mozila Firefox</td>
                                 <td class="text-right"><span class="label label-success">27%</span></td>
@@ -168,7 +174,7 @@
                                 <td><img src="{{ asset('assets/img/browser/internet-logo.png') }}"  alt="logo"></td>
                                 <td>Microsoft edge</td>
                                 <td class="text-right"><span class="label label-indigo">4%</span></td>
-                            </tr>
+                            </tr> --}}
                         </tbody>
                     </table>
                 </div>
